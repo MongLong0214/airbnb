@@ -12,11 +12,10 @@ import toast from "react-hot-toast";
 import Button from "@/app/components/Button";
 import {signIn} from "next-auth/react";
 
-
 const RegisterModal = () => {
 
     const registerModal = useRegisterModal();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const {
         register,
